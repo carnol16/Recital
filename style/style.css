@@ -1,0 +1,56 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#rnbo-root {
+    height: 100vh;
+    width: 100vw;
+}
+#background {
+    position: fixed;
+    z-index: -1;
+}
+
+h2, em {
+    width: 100%;
+}
+
+#rnbo-root {
+    margin: auto;
+    max-width: 540px;
+}
+
+#rnbo-clickable-keyboard {
+    display: wrap;
+    flex-wrap: wrap;
+}
+
+#rnbo-clickable-keyboard > div {
+    margin: 2px;
+    border: dashed black 10px;
+    min-height: 100px;
+    min-width: 10px;
+    flex-grow: 1;
+    display: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#rnbo-clickable-keyboard > div.clicked {
+    background: #000000;
+    color: #ff0000;
+}
+
+#rnbo-parameter-sliders {
+    display: none;
+    flex-direction: column;
+}
+
+#rnbo-parameter-sliders > div {
+    display: none;
+}
+
+#rnbo-parameter-sliders > div > input:first-of-type {
+    flex-grow: 1;
+}
